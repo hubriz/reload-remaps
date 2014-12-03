@@ -1,0 +1,683 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="overview &amp; stats" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
+  
+    <title>Remaps v4</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/elusive-webfont.css">
+    <link rel="stylesheet" href="css/fullcalendar.css">
+    
+    
+    <!--[if IE 7]>
+      <link rel="stylesheet" href="css/font-awesome-ie7.min.css">
+    <![endif]-->
+    <!--[if lte IE 8]>
+      <link rel="stylesheet" href="css/ace-ie.min.css" />
+    <![endif]-->
+  
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/admin-min.css">    
+    <link rel="stylesheet/less" href="css/main.less">
+    
+    
+    <script src="js/less-1.7.0.min.js" type="text/javascript"></script>
+    
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  
+</head>
+<body class="navbar-fixed breadcrumbs-fixed">
+    
+    <!-- HEADER BAR -->
+    <div class="navbar navbar-fixed-top" id="navbar-top">
+        <div class="navbar-inner">
+            <div class="container-fluid">
+              <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="brand" href="index.html" alt="Remaps"><img src="img/remaps_logo.png" alt=" Remaps"></a>
+
+                <div class="nav-collapse collapse">
+                    <ul class="nav ace-nav pull-right spacer-top">
+                        <li>
+                            <div class="btn-group">
+                                <a class="btn btn-warning btn-mini dropdown-toggle" data-toggle="dropdown">6</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="">One</a></li>
+                                    <li><a href="">Two</a></li>
+                                    <li><a href="">Three</a></li>
+                                    <li><a href="">Four</a></li>
+                                </ul>
+                            </div>
+                            <div class="btn-group">
+                                <a class="btn btn-info btn-mini dropdown-toggle" data-toggle="dropdown">8</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="">One</a></li>
+                                    <li><a href="">Two</a></li>
+                                    <li><a href="">Three</a></li>
+                                    <li><a href="">Four</a></li>
+                                </ul>
+                            </div>
+                            <div class="btn-group">
+                                <a class="btn btn-primary btn-mini dropdown-toggle" data-toggle="dropdown">10</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="">One</a></li>
+                                    <li><a href="">Two</a></li>
+                                    <li><a href="">Three</a></li>
+                                    <li><a href="">Four</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <form class="spacer-left no-space-below row-top">
+                                <!-- <div class="left-inner-addon ">
+                                    <i class="icon-search"></i>
+                                    <input type="text" class="form-control input-block-level" placeholder="Search.." >
+                                </div> -->
+                                <div class="controls">
+                                    <span class="input-icon">
+                                        <input type="text" placeholder="Search..">
+                                        <i class="icon-search"></i>
+                                        </span>
+                                </div>
+                            </form>
+                        </li>
+                        <li>
+                            <div class="btn-group name-dropdown spacer-left spacer-right">
+                                <h5 class="btn"><strong>Paul</strong></h5>
+                                <button class="dropdown-toggle" data-toggle="dropdown">
+                                    <span><i class="icon-chevron-down"></i></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><a href="#">Profile</a></li>
+                                  <li><a href="#">Logout</a></li>
+                                </ul>
+                            </div> 
+                        </li>
+                    </ul><!--/.ace-nav-->
+                </div>
+            </div><!--/.container-fluid-->
+        </div><!--/.navbar-inner-->
+    </div>
+    <!-- END OF HEADER BAR-->
+    
+    <!-- Main Container -->
+    <div class="container-fluid main-container">
+       
+       <!-- TOGGLE Menu on Mobile view-->
+        <a class="menu-toggler" id="menu-toggler" href="#">
+            <span class="menu-text"></span>
+        </a>
+       
+       <!-- FIXED LEFT SIDEBAR -->
+        <div id="sidebar" class="sidebar fixed">
+            <ul class="nav nav-list">
+                <li class="active">
+                    <a href="index.html">
+                        <i class="icon-home"></i>
+                        <span class="menu-text">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="clients.html">
+                        <i class="el-icon-myspace"></i>
+                        <span class="menu-text">Clients</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="reports.html">
+                        <i class="icon-copy"></i>
+                        <span class="menu-text">Reports</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="myreload.html">
+                        <i class="icon-power-off"></i>
+                        <span class="menu-text">My Reload</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="partners.html">
+                        <i class="icon-group"></i>
+                        <span class="menu-text">Partners</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="sales.html">
+                        <i class="icon-money"></i>
+                        <span class="menu-text">Sales</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="invoicing.html">
+                        <i class="el-icon-file-edit"></i>
+                        <span class="menu-text">Invoicing</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="management.html">
+                        <i class="el-icon-car"></i>
+                        <span class="menu-text">Management</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="settings.html">
+                        <i class="icon-gear"></i>
+                        <span class="menu-text">Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="help.html">
+                        <i class="icon-question-sign"></i>
+                        <span class="menu-text">Help</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="sidebar-collapse" id="sidebar-collapse">
+                <i class="icon-double-angle-left"></i>
+            </div>
+        </div><!--end #sidebar-->
+        <!--end FIXED SIDEBAR -->
+        
+        <div class="main-content">
+            <div class="breadcrumbs fixed" id="breadcrumbs">
+                <ul class="breadcrumb">
+                    <!-- <li>
+                        <i class="icon-home home-icon"></i>
+                        <a href="#">Home</a>
+                    
+                        <span class="divider">
+                            <i class="icon-angle-right arrow-icon"></i>
+                        </span>
+                    </li> -->
+                    <li class="active">Dashboard</li>
+                </ul><!--.breadcrumb-->
+
+            </div><!--end #breadcrumbs-->
+            
+            <div class="page-content">
+                <div class="row-fluid page-content-top-spacer">
+                    <div class="span12">
+                        <div class="row-fluid clearfix">
+                            <div class="span3">
+                                <div class="row-fluid">
+                                    <div class="span5">
+                                        <a href=""><img src="http://placehold.it/140x140&text=Profile+Picture" alt="Profile Pic" class="img-polaroid" ></a>
+                                    </div>
+                                    <div class="span6 offset1">
+                                        <p class="lead text-center spacer-top">Welcome back <strong>Paul</strong></p>
+                                    </div>
+                                </div>  
+                                <hr class="clearfix" />
+                                <div class="row-fluid">
+                                    <div class="span12 widget-container-span">
+                                        <div class="widget-box transparent">
+                                            <div class="widget-header no-border">
+                                                <h4 class="lighter">Support Requests <span><button class="btn btn-mini btn-danger no-border">3</button></span></h4>
+                                                <div class="widget-toolbar no-border">
+                                                    <a href="#" data-action="collapse">
+                                                        <i class="icon-chevron-up"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="widget-body">
+                                                <div class="widget-body-inner">
+                                                    <div class="widget-main">
+                                                        <ul class="unstyled">
+                                                            <li>
+                                                                <div class="row-fluid">
+                                                                    <div class="span8">
+                                                                        <p>14/09/12 <a>Can I view my report early?</a> - Bills Plumbing</p>
+                                                                    </div>
+                                                                    <div class="span4">
+                                                                        <div class="btn-group">
+                                                                            <button class="btn btn-mini btn-light"><i class="icon-share icon-flip-horizontal"></i></button>
+                                                                            <button class="btn btn-mini btn-light"><i class="el-icon-hourglass"></i></button>
+                                                                            <button class="btn btn-mini btn-light"><i class="icon-remove-circle"></i></button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="row-fluid">
+                                                                    <div class="span8">
+                                                                        <p>15/09/12 <a>My invoice still hasnt shown up in my rempas account?</a> - Freddy Client</p>
+                                                                    </div>
+                                                                    <div class="span4">
+                                                                        <div class="btn-group">
+                                                                            <button class="btn btn-mini btn-light"><i class="icon-share icon-flip-horizontal"></i></button>
+                                                                            <button class="btn btn-mini btn-light"><i class="el-icon-hourglass"></i></button>
+                                                                            <button class="btn btn-mini btn-light"><i class="icon-remove-circle"></i></button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="row-fluid">
+                                                                    <div class="span8">
+                                                                        <p>14/09/12 <a>Is it possible to have more than one package?</a> - Bookworms</p>
+                                                                    </div>
+                                                                    <div class="span4">
+                                                                        <div class="btn-group">
+                                                                            <button class="btn btn-mini btn-light"><i class="icon-share icon-flip-horizontal"></i></button>
+                                                                            <button class="btn btn-mini btn-light"><i class="el-icon-hourglass"></i></button>
+                                                                            <button class="btn btn-mini btn-light"><i class="icon-remove-circle"></i></button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                        <br class="clearfix">
+                                                        
+                                                        <h5 class="lighter">What&rsquo;s News &#63;</h5>
+                                                        
+                                                        <textarea rows="4" class="input-block-level no-resize"></textarea>
+                                                        <span class="pull-right row-bottom"><button class="btn btn-success btn-small">Share</button></span>
+                                                        
+                                                        <hr class="clearfix clr" />
+                                                        
+                                                        <div class="comment-dashboard-list">
+                                                            <div class="media">
+                                                                <a href="" class="pull-left">
+                                                                    <img src="http://placehold.it/64x64" alt="Profile Pic" class="img-circle">
+                                                                </a>
+                                                                <div class="media-body">
+                                                                    <p>
+                                                                        <a>Rick&rsquo;</a>s client, Bill the Plumber, went up to 65% this month
+                                                                        <em><small class="text-right muted">Posted by Iain</small></em>
+                                                                    </p>
+                                                                    
+                                                                    <ul class="unstyled inline with-divider">
+                                                                        <li><a href="" class="kudos-click" data-toggle="tooltip" title="Count me in!"><small>Give Kudos</small></a></li>
+                                                                        <li><a href="" class="post-comment"><small>Comment</small></a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <!-- Comments views -->
+                                                                <div class="well media hide">
+                                                                    <a href="" class="pull-left">
+                                                                        <img src="http://placehold.it/40x40" alt="Profile Pic" class="img-polaroid">
+                                                                    </a>
+                                                                    <div class="media-body">
+                                                                        <textarea rows="2" class="input-block-level no-resize" placeholder="Write Comment"></textarea>
+                                                                    </div>
+                                                                </div>
+                                                            </div><!--end .media-->
+                                                            <div class="media">
+                                                                <a href="" class="pull-left">
+                                                                    <img src="http://placehold.it/64x64" alt="Profile Pic" class="img-circle">
+                                                                </a>
+                                                                <div class="media-body">
+                                                                    <p>
+                                                                        <a>Paul</a> earnt the <a>Client Happy</a> badge
+                                                                        <em><small class="text-right muted">Awarded by REMAPS</small></em>
+                                                                    </p>
+                                                                    
+                                                                    <ul class="unstyled inline with-divider">
+                                                                        <li><a href="" class="kudos-click" data-toggle="tooltip" data-title="<p><small>Holly</small></p><p><small>Marnie</small></p>"><small><span>3</span> Kudos</small></a></li>
+                                                                        <li><a href="" class="post-comment"><small>Comment</small></a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <!-- Comments views -->
+                                                                <div class="well media hide">
+                                                                   <div class="row-fluid row-bottom">
+                                                                       <div class="media">
+                                                                           <a href="" class="pull-left"><img class="img-circle" src="http://placehold.it/30x30" alt="Profile Pic"></a>
+                                                                           <div class="media-body">
+                                                                               <p class="muted"><small>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</small></p>
+                                                                           </div>
+                                                                       </div>
+                                                                       <div class="media">
+                                                                           <a href="" class="pull-left"><img class="img-circle" src="http://placehold.it/30x30" alt="Profile Pic"></a>
+                                                                           <div class="media-body">
+                                                                               <p class="muted"><small>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</small></p>
+                                                                           </div>
+                                                                       </div>
+                                                                   </div>
+                                                                   
+                                                                    <a href="" class="pull-left">
+                                                                        <img src="http://placehold.it/40x40" alt="Profile Pic" class="img-polaroid">
+                                                                    </a>
+                                                                    <div class="media-body">
+                                                                        <textarea rows="2" class="input-block-level no-resize" placeholder="Write Comment"></textarea>
+                                                                    </div>
+                                                                </div>
+                                                            </div><!--end .media-->
+                                                            <div class="media">
+                                                                <a href="" class="pull-left">
+                                                                    <img src="http://placehold.it/64x64" alt="Profile Pic" class="img-circle">
+                                                                </a>
+                                                                <div class="media-body">
+                                                                    <p>
+                                                                        <a>Taryn</a> earnt the <a>Client Happy</a> badge
+                                                                    </p>
+                                                                    
+                                                                    <ul class="unstyled inline with-divider">
+                                                                        <li><a href="" class="kudos-click" data-toggle="tooltip" title="Count me in!"><small>Give Kudos</small></a></li>
+                                                                        <li><a href="" class="post-comment"><small>Comment</small></a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <!-- Comments views -->
+                                                                <div class="well media hide">
+                                                                    <a href="" class="pull-left">
+                                                                        <img src="http://placehold.it/40x40" alt="Profile Pic" class="img-polaroid">
+                                                                    </a>
+                                                                    <div class="media-body">
+                                                                        <textarea rows="2" class="input-block-level no-resize" placeholder="Write Comment"></textarea>
+                                                                    </div>
+                                                                </div>
+                                                            </div><!--end .media-->
+                                                            
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                    
+                            
+                            </div>
+                            <div class="span9">
+                                <div class="row-flud clearfix">
+                                    <div class="widget-container-span">
+                                        <div class="widget-box">
+                                            <div class="widget-header">
+                                                <h4 class="lighter">
+                                                    My Notifications 
+                                                    <span><button class="btn btn-pink no-border btn-mini">2</button></span>
+                                                    <span class="pointer"><i class="icon-external-link"></i></span>
+                                                </h4>
+                                                <div class="widget-toolbar no-border">
+                                                    <a href="" data-action="settings"><i class="icon-cog"></i></a>
+                                                    <a href="" data-action="reload"><i class="icon-refresh"></i></a>
+                                                    <a href="" data-action="collapse"><i class="icon-chevron-up"></i></a>
+                                                </div>
+                                                <ul class="nav nav-tabs">
+                                                    <li class="active"><a data-toggle="tab" href="#dashboard-notifications-all">All</a></li>
+                                                    <li><a data-toggle="tab" href="#dashboard-notifications-reports">Reports</a></li>
+                                                    <li><a data-toggle="tab" href="#dashboard-notifications-renewals">Renewals</a></li>
+                                                    <li><a data-toggle="tab" href="#dashboard-notifications-invoices">Invoices</a></li>
+                                                    <li><a data-toggle="tab" href="#dashboard-notifications-partners">Partners</a></li>
+                                                    <li><a data-toggle="tab" href="#dashboard-notifications-optimisation">Optimisation</a></li>
+                                                    <li><a data-toggle="tab" href="#dashboard-notifications-performance">Performance</a></li>
+                                                    <li><a data-toggle="tab" href="#dashboard-notifications-sales">Sales</a></li>
+                                                    <li><a data-toggle="tab" href="#dashboard-notifications-social">Social</a></li>
+                                                </ul>
+                                    
+                                            </div>
+                                            <div class="widget-body">
+                                                <div class="widget-main">
+                                                    <div class="tab-content">
+                                                        <div id="dashboard-notifications-all" class="tab-pane in active">
+                                                            <table class="table table-striped table-hover table-bordered">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>When&#63;</th>
+                                                                        <th>Importance</th>
+                                                                        <th>Description</th>
+                                                                        <th>Dismiss&#63;</th>
+                                                                        <th>Turn into Task&#63;</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>Today 9:30am</td>
+                                                                        <td class="center">7</td>
+                                                                        <td>Partner Pass On - Vivo Group</td>
+                                                                        <td class="center"><span class="pointer"><i class="icon-check"></i></span></td>
+                                                                        <td class="center"><span class="pointer"><i class="icon-calendar"></i></span></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>2 days ago</td>
+                                                                        <td class="center">1</td>
+                                                                        <td>Bayside Plumbing Keyword Signoff</td>
+                                                                        <td class="center"><span class="pointer"><i class="icon-check"></i></span></td>
+                                                                        <td class="center"><span class="pointer"><i class="icon-calendar"></i></span></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        <div id="dashboard-notifications-reports" class="tab-pane">
+                                                            <div class="slim-scroll" data-height="100">
+                                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, vitae unde in eius nisi reiciendis fuga? Nihil nesciunt quos repellat deserunt vel. Distinctio, alias nobis culpa earum totam doloremque. Illum.</p>
+                                                                <p>Libero, autem, reiciendis est officiis culpa unde repellendus? Eligendi, vitae, sequi, voluptate quis eius provident facere nemo sunt similique est dolore optio debitis aut repellendus dolorem explicabo quidem reprehenderit. Soluta.</p>
+                                                                <p>Unde, ad, pariatur at ratione laboriosam quo optio rerum cumque enim quos minima ex earum ipsam deserunt sit nam ipsa! Atque nulla eligendi corporis ratione rem id ullam quam nesciunt!</p>
+                                                            </div>
+                                                        </div>
+                                                        <div id="dashboard-notifications-renewals" class="tab-pane">
+                                                            <div class="slim-scroll" data-height="100">
+                                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, ex, quod, obcaecati, doloribus dolorem minus aspernatur enim fuga facilis quam tenetur corporis hic quas. Amet odio atque impedit enim tempore.</p>
+                                                                <p>Hic, explicabo, mollitia, atque, dolor laudantium impedit architecto nam velit sint odit aut eum laboriosam accusamus distinctio odio labore rerum quo temporibus laborum quidem suscipit voluptates repellendus perspiciatis ut nemo!</p>
+                                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, facilis, nemo atque quasi corporis quos odio iure quo voluptatibus nisi dolor ea dolorum dicta labore commodi cumque beatae incidunt aliquid ex possimus quas totam neque id adipisci sed saepe fuga blanditiis natus reprehenderit deserunt. Odio, in dolor deserunt ex asperiores.</p>
+                                                                <p>Deserunt, natus, accusantium expedita aspernatur tempora aliquid commodi libero eligendi laboriosam sequi optio vel dolor laborum doloribus incidunt ipsum harum officia neque magni quas! Odit, quia, voluptatibus, eveniet sint eligendi blanditiis saepe eaque labore corrupti delectus dolor harum at eos maiores nisi. Aliquam dolor necessitatibus maxime praesentium ducimus facilis molestiae?</p>
+                                                                <p>Qui, consectetur, voluptatem, fuga enim ad unde culpa quidem mollitia possimus dolorem excepturi nemo iusto labore. Unde, aliquid, consequuntur, perferendis, ipsam voluptatum assumenda hic quo aperiam laudantium quis quod doloremque ratione in esse voluptatibus aut molestiae quae odit dignissimos deserunt molestias inventore quaerat modi laborum itaque facere nihil. Est, ipsum.</p>
+                                                                <p>Fugiat repellendus natus temporibus excepturi at incidunt rerum quibusdam. Recusandae, officia, reprehenderit nemo porro ex saepe quis dignissimos in impedit animi vitae neque aperiam magni aliquid veritatis tempore pariatur iusto tempora expedita placeat earum fugit eaque quaerat quas ipsum. Officiis, repellendus ut corrupti autem qui perferendis culpa itaque assumenda alias!</p>
+                                                                <p>Perferendis consectetur voluptatum dolorum vitae temporibus provident totam suscipit consequuntur distinctio dignissimos. Vitae, illo, sequi doloribus ullam tempora laudantium hic eos aperiam provident quasi quaerat at totam voluptatem alias expedita esse aspernatur quis odit ex nulla numquam vel inventore debitis libero perspiciatis tempore quia ipsa quas saepe eaque atque soluta.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div id="dashboard-notifications-invoices" class="tab-pane">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, dicta, delectus, provident animi minus sequi nam ducimus aspernatur necessitatibus impedit corrupti repellendus quod. At, laudantium, autem ratione quaerat aspernatur quam.</p>
+                                                            <p>Tenetur, aut minima modi animi quae incidunt eaque quo itaque voluptatum sapiente unde sint ad fugit placeat perspiciatis dicta labore dolor minus quisquam voluptate. Itaque ad id voluptatum omnis ex.</p>
+                                                            <p>Enim, cupiditate delectus ipsum ullam at? Fugit, odit veniam earum culpa nobis aliquid aspernatur quasi sapiente optio architecto? Quos, corporis voluptatem neque at esse qui explicabo animi facilis est eos.</p>
+                                                            <p>Sed, provident, hic, omnis animi perspiciatis voluptas recusandae cumque placeat repellat labore corrupti libero expedita esse dolore molestiae consectetur qui laudantium similique aliquid doloremque voluptatum! Tempore, fuga nesciunt vitae at!</p>
+                                                            <p>Consectetur, repellat ab nostrum perspiciatis ipsa ipsam. Vero, nam, nemo, harum optio atque eius est debitis temporibus fugit consequuntur incidunt voluptatum aperiam blanditiis provident quia inventore adipisci accusamus quam delectus.</p>
+                                                            <p>Quis, dolores, similique, aperiam, ex voluptates et accusamus quas aliquid exercitationem rerum repudiandae recusandae ullam placeat perspiciatis voluptatem esse iusto. Error, nemo explicabo incidunt blanditiis temporibus illum voluptatem minima quisquam.</p>
+                                                        </div>
+                                                        <div id="dashboard-notifications-partners" class="tab-pane">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, libero, nobis, aspernatur voluptates qui deleniti ut quae at ex soluta obcaecati repellendus fugit expedita voluptate ducimus quidem veritatis voluptatem dicta explicabo debitis dolorem autem voluptas.</p>
+                                                            <p>At, dolores, in iste rem ad voluptatibus hic tempora id architecto veniam inventore asperiores nemo quasi illo dicta deleniti eum laudantium quis. Quis, unde molestiae adipisci tempore autem quo. Odit, impedit excepturi illum labore tenetur.</p>
+                                                            <p>Numquam, libero in nihil natus iste praesentium tempora quae eaque sapiente aliquid. Inventore, alias, sapiente hic excepturi quibusdam illo consequuntur repellat minus natus illum debitis distinctio molestias eum impedit odit ratione repudiandae ipsum aspernatur atque.</p>
+                                                        </div>
+                                                        <div id="dashboard-notifications-optimisation" class="tab-pane">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit molestias nam sapiente voluptates illo nemo autem quod officia natus. Accusamus, assumenda fugiat earum minima porro inventore repellendus dolore dicta illum!</p>
+                                                            <p>Autem, ex, quasi, totam neque molestias voluptas consequuntur qui quam impedit esse officiis adipisci nesciunt culpa natus sequi illo sit eum aperiam placeat maiores quae ab necessitatibus ipsam cumque a.</p>
+                                                            <p>Vero fuga quos voluptatum id aut eius at? Non, perferendis, id dolore odit eius ut libero magni nam sapiente necessitatibus veniam fugit quos minus soluta exercitationem facere error velit omnis!</p>
+                                                        </div>
+                                                        <div id="dashboard-notifications-performance" class="tab-pane">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, dignissimos facilis sit aliquid magni excepturi quae voluptatum repudiandae quos nobis eius consectetur voluptas non possimus aliquam corporis quod molestiae assumenda!</p>
+                                                            <p>Inventore, totam, eos, velit, molestiae consequatur voluptates laborum excepturi aut eligendi repellat illo molestias quod praesentium cupiditate quas similique optio iure hic soluta aperiam dolores sapiente at quos ullam et!</p>
+                                                            <p>Impedit, distinctio eveniet quis dolorem asperiores earum numquam explicabo illum odit laboriosam libero iste cumque! Excepturi, illum eius sed omnis optio corporis dignissimos saepe quia doloribus vitae? Possimus, eveniet, itaque!</p>
+                                                            <p>Fugiat, aut, deserunt, voluptatibus, fuga consequatur atque porro nihil animi sit iste magnam dolorem saepe impedit libero laudantium laborum placeat culpa praesentium repellat similique ex dolor reiciendis provident inventore quas!</p>
+                                                            <p>Vero, cum, non, rem tenetur quae ducimus architecto qui aliquid corporis quo commodi dicta ipsam placeat perspiciatis repellendus iusto est facilis! Ipsa, explicabo qui deleniti culpa cum perferendis. Rerum, error?</p>
+                                                        </div>
+                                                        <div id="dashboard-notifications-sales" class="tab-pane">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, suscipit, voluptates error id vitae placeat cupiditate saepe laborum voluptatem at nisi repellendus quae exercitationem enim aut deserunt fugit excepturi accusamus praesentium unde dolores est voluptatibus officia voluptatum laboriosam repellat itaque.</p>
+                                                            <p>Obcaecati, rem earum repellendus qui repellat aliquam consequuntur provident saepe consequatur est ex esse at ut quos eligendi ullam doloremque. Obcaecati, doloribus, excepturi, dolorum culpa doloremque cumque corporis odio repellendus blanditiis totam eius nam praesentium pariatur aliquam officia molestias nihil?</p>
+                                                            <p>Consectetur, deleniti, tempore, iure, ipsa necessitatibus expedita exercitationem dolore aliquam sint eaque unde consequatur pariatur facilis eos rem eligendi a ex voluptatem cupiditate perferendis velit deserunt aperiam qui? Beatae voluptatum quos eos culpa sint iusto optio temporibus tempora illo explicabo.</p>
+                                                        </div>
+                                                        <div id="dashboard-notifications-social" class="tab-pane">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, corporis, quam, temporibus et blanditiis numquam labore amet mollitia quae tempore nihil fugiat obcaecati magnam? Itaque doloribus dicta ullam ipsam aut.</p>
+                                                            <p>Reprehenderit, quasi, quos commodi doloremque dolorum tempore. Iste, laudantium, esse harum pariatur itaque ipsam iusto quis accusamus maiores nemo enim culpa fugit magnam ut optio ullam perferendis labore quisquam similique!</p>
+                                                            <p>Voluptate, culpa, nostrum placeat quibusdam ea repudiandae amet accusamus voluptatem dignissimos quae eveniet quis enim tempore cumque excepturi. Nulla, magni et sapiente adipisci quos expedita ea quod voluptas consequuntur soluta.</p>
+                                                            <p>Consequuntur, suscipit, quod, perferendis neque non eius odio culpa cupiditate dolor dolorum necessitatibus voluptatem error assumenda provident enim maiores saepe minus eveniet sunt voluptatibus eligendi quibusdam voluptates nesciunt iste harum!</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="space-12"><!-- spacer --></div>
+                                
+                                <div class="row-fluid ">
+                                    <div class="widget-container-span">
+                                        <div class="widget-box">
+                                            <div class="widget-header">
+                                                <h4 class="lighter">My Tasks 
+                                                    <span><button class="btn btn-yellow no-border btn-mini">2</button></span>
+                                                    <span class="pointer"><i class="icon-external-link"></i></span>
+                                                </h4>
+                                                <div class="widget-toolbar no-border">
+                                                    <a href="" data-action="settings"><i class="icon-cog"></i></a>
+                                                    <a href="" data-action="reload"><i class="icon-refresh"></i></a>
+                                                    <a href="" data-action="collapse"><i class="icon-chevron-up"></i></a>
+                                                </div>
+                                                <ul class="nav nav-tabs no-border">
+                                                  <li class="active"><a href="#dashboard-task-today" data-toggle="tab">Today</a></li>
+                                                  <li><a href="#dashboard-task-week" data-toggle="tab">This Week</a></li>
+                                                  <li><a href="#dashboard-task-month" data-toggle="tab">This Month</a></li>
+                                                  <li><a href="#dashboard-task-custom" data-toggle="tab">Custom Range</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="widget-body">
+
+                                                <div class="tab-content">
+                                                  <div class="tab-pane active" id="dashboard-task-today">
+                                                      <table class="table table-striped table-hover table-bordered">
+                                                          <thead>
+                                                              <tr>
+                                                                  <th>Due Date</th>
+                                                                  <th>Importance Score</th>
+                                                                  <th>Task Difference</th>
+                                                                  <th>Status</th>
+                                                                  <th>Assigned By</th>
+                                                                  <th>Marked as Complete?</th>
+                                                              </tr>
+                                                          </thead>
+                                                          <tbody>
+                                                              <tr>
+                                                                  <td>23/09/12</td>
+                                                                  <td>9</td>
+                                                                  <td>Jim's Tree Lopping IRR work</td>
+                                                                  <td>In progress</td>
+                                                                  <td>Alex</td>
+                                                                  <td><span class="pointer"><i class="icon-ok icon-large"></i></span></td>
+                                                              </tr>
+                                                              <tr>
+                                                                  <td>20/09/12</td>
+                                                                  <td>4</td>
+                                                                  <td>Warren's Plumbing Session Summary 3</td>
+                                                                  <td>In progress</td>
+                                                                  <td>Iain</td>
+                                                                  <td><span class="pointer"><i class="icon-ok icon-large"></i></span></td>
+                                                              </tr>
+                                                              <tr>
+                                                                  <td>24/09/12</td>
+                                                                  <td>5</td>
+                                                                  <td>Send AdYouKnowIt SEO Renewal Form</td>
+                                                                  <td>Not Started</td>
+                                                                  <td>REMAPS</td>
+                                                                  <td><span class="pointer"><i class="icon-ok icon-large"></i></span></td>
+                                                              </tr>
+                                                          </tbody>
+                                                      </table>
+                                                  </div><!--end #dashboard-task-today-->
+                                                  <div class="tab-pane" id="dashboard-task-week">Week</div>
+                                                  <div class="tab-pane" id="dashboard-task-month">Month</div>
+                                                  <div class="tab-pane" id="dashboard-task-custom">Custom Range</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="space-12"><!-- spacer --></div>
+                                
+                                <div class="row-fluid">
+                                    <div class="span12 widget-container-span">
+                                        <div class="widget-box transparent">
+                                            <div id="dashboard-calendar"></div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <div class="space-12"><!-- spacer --></div>
+                            </div>
+                        </div>
+                        <div class="row-fluid">
+                            <div class="span6">
+                                <div class="widget-box">
+                                    <div class="widget-header widget-header-flat">
+                                        <h4>Clients</h4>
+                                    </div>
+
+                                    <div class="widget-body">
+                                        <div class="widget-main">
+                                            <ul>
+                                                <li>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, asperiores rem quisquam quo ipsum aut sequi repellendus praesentium rerum similique.</p>
+                                                </li>
+                                                <li>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, facilis, id dolorum eius asperiores soluta unde iusto quia corrupti aliquam.</p>
+                                                </li>
+                                                <li>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, asperiores rem quisquam quo ipsum aut sequi repellendus praesentium rerum similique.</p>
+                                                </li>
+                                                <li>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus ratione officiis culpa corporis veritatis debitis non fuga labore natus assumenda..</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div><!--end .widget-box-->
+                            </div><!--end .span6-->
+                            
+                            <div class="span6">
+                                <div class="widget-header widget-header-flat">
+                                    <h4 class="smaller">Reports</h4>
+                                    <div class="widget-toolbar">
+                                        <label>
+                                            <small class="green">Horizontal</small>
+                                            <input type="checkbox" id="id-check-horizontal" class="ace-switch">
+                                            <span class="lbl"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="widget-body">
+                                    <div class="widget-main">
+                                        <dl>
+                                           <dt>Definition list</dt>
+                                           <dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+                                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+                                        commodo consequat.</dd>
+                                           <dt>Lorem ipsum dolor sit amet</dt>
+                                           <dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+                                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+                                        commodo consequat.</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div><!--end .span6-->
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+                
+            </div><!--end .page-content-->
+            
+        </div><!--end #main-content-->
+    </div><!--end .main-container-->
+  
+    <!-- Go to Top -->
+    <a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-small btn-inverse">
+        <i class="icon-double-angle-up icon-only bigger-110"></i>
+    </a>
+  
+  
+  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-migrate-1.2.1.min.js"><\/script>')</script>
+  
+  <script src="js/vendor/bootstrap.min.js"></script>
+  <script src="js/vendor/fullcalendar.min.js"></script>
+  <script src="js/plugin/admin.min.js"></script>
+  <script src="js/plugin/core.js"></script>
+  <script src="js/main.js"></script>
+  
+
+
+</body>
+</html>
